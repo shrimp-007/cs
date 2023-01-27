@@ -5,36 +5,18 @@
     <title>title</title>
   </head>
   <body>
-    
-  <form action="/action_page.php">
+  
   <label for="fnum">first number:</label><br>
   <input type="text" id="fnum" name="fnum" value="1..."><br>
   <label for="2num">2nd number:</label><br>
   <input type="text" id="2num" name="2num" value="2..."><br><br>
-  <input type="submit" value="Submit">
-</form>
-    
-<button onclick="myFunction()">Try it</button>
-    <button onclick="myFunction1()">1</button>
-    <button onclick="myFunction2()">2</button>
-    <button onclick="myFunction3()">3</button>
-    <button onclick="reset()">reset</button>
+  <input type="submit" onclick="Submit()">
+ 
 <script>
-  var count=0
-  function myFunction1(){
-    count=count+1
-  }
-  function myFunction2(){
-    count=count+2
-  }
-  function myFunction3(){
-    count=count+3
-  }
-  function myFunction(){
-    window.alert(count)
-  }
-  function reset(){
-    count=0
+  function Submit(){
+    var n1=document.getElementById("fnum").innerHTML
+    var n2=document.getElementById("2num").innerHTML
+    value= n1 + n2
   }
 
 </script>
