@@ -7,17 +7,17 @@
   <body>
   
   <label for="fnum">first number:</label><br>
-  <input type="text" id="fnum" name="fnum" value="1..."><br>
+  <input type="text" id="fnum" name="fnum" value="1"><br>
   <label for="2num">2nd number:</label><br>
-  <input type="text" id="2num" name="2num" value="2..."><br><br>
+  <input type="text" id="2num" name="2num" value="2"><br><br>
   <input type="submit" onclick="Submit()">
  
 <script>
   function Submit(){
     var n1=document.getElementById("fnum").innerHTML
     var n2=document.getElementById("2num").innerHTML
-    value = n1 + n2
-    window.alert(value)
+    var n3= n1 + n2
+    window.alert(n3)
   }
 
 </script>
