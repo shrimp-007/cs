@@ -11,14 +11,18 @@
     <button onclick="myFunction2()">2</button>
     <button onclick="myFunction3()">3</button>
 <script>
+  var count=0
   function myFunction1(){
-    window.alert(1)
+    count=count+1
   }
   function myFunction2(){
-    window.alert(2)
+    count=count+2
   }
   function myFunction3(){
-    window.alert(3)
+    count=count+3
+  }
+  function myFunction(){
+    window.alert(count)
   }
 
 </script>
