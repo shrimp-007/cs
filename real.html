@@ -13,12 +13,14 @@
   <input type="submit" onclick="Submit()">
  
 <script>
-  function Submit(){
-    let num= var
+  function Submit(){ 
+    var n1=document.getElementById("fnum").value
+    var num=parseInt(n1)
     let two=num.toString(2)
-    var n1=document.getElementById("fnum").value = two
-    var n2=document.getElementById("2num").value = two
-    var n3=parseInt(n1) + parseInt(n2)
+    var n2=document.getElementById("2num").value
+    var num2=parseInt(n2)
+    let two=num.toString(2)
+    var n3=num + num2
     window.alert(n3)
    
   }
