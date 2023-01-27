@@ -14,9 +14,9 @@
  
 <script>
   function Submit(){
-    var n1=document.getElementById("fnum").innerHTML
-    var n2=document.getElementById("2num").innerHTML
-    var n3= n1 + n2
+    var n1=document.getElementById("fnum").value
+    var n2=document.getElementById("2num").value
+    var n3=parseInt(n1) + parseInt(n2)
     window.alert(n3)
   }
 
