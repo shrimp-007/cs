@@ -18,12 +18,20 @@
 <script>
   function Submit(){ 
     var n1=document.getElementById("digit").value
+    let pv=1
+    let value=0
+    for(let i = n1.length-1; i >=0; i--){
+      value = value + (parseInt(n1[i]) * pv)
+      pv = pv *2
+    }
+    window.alert(value)
+    
     let two=num.toString(2)
     var n2=document.getElementById("2digit").value
     shifts=parseInt(n2, 2)
     var num2=parseInt(n2)
     let twoo=num.toString(2)
-    window.alert(shifts)
+    window.alert()
   }
 
 </script>
