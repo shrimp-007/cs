@@ -18,14 +18,12 @@
 <script>
   function Submit(){ 
     var n1=document.getElementById("digit").value
-    var num=parseInt(n1)
     let two=num.toString(2)
     var n2=document.getElementById("2digit").value
+    shifts=parseFloat(n2, 2)
     var num2=parseInt(n2)
     let twoo=num.toString(2)
-    var n3=num + num2
-    window.alert(parseInt(n3, 2))
-   
+    window.alert(n2)
   }
 
 </script>
