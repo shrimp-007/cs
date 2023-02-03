@@ -9,22 +9,22 @@
   </head>
   <body>
   <h1 style="font-family:'Brush Script MT', cursive; font-size:400%;">floating point to denary</h1>
-  <label for="fnum">first number:</label><br>
-  <input type="text" id="fnum" name="fnum" value="1"><br>
-  <label for="2num">2nd number:</label><br>
-  <input type="text" id="2num" name="2num" value="2"><br><br>
+  <label for="digit">first number:</label><br>
+  <input type="text" id="digit" name="digit" value="1"><br>
+  <label for="2digit">2nd number:</label><br>
+  <input type="text" id="2digit" name="2digit" value="2"><br><br>
   <input type="submit" onclick="Submit()">
  
 <script>
   function Submit(){ 
-    var n1=document.getElementById("fnum").value
+    var n1=document.getElementById("digit").value
     var num=parseInt(n1)
     let two=num.toString(2)
-    var n2=document.getElementById("2num").value
+    var n2=document.getElementById("2digit").value
     var num2=parseInt(n2)
     let twoo=num.toString(2)
     var n3=num + num2
-    window.alert(n3.toString(2))
+    window.alert(parseInt(n3, 2))
    
   }
 
