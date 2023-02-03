@@ -1,0 +1,33 @@
+
+
+function fixInteger(el) {
+    // this is element's value selector, you should use your own
+    value = $(el).val();
+    if (value == '') {
+        value = 0;
+    }
+    newValue = parseInt(value);
+    // if new value is Nan (when input is a string with no integers in it)
+    if (isNaN(newValue)) {
+        value = 0;
+        newValue = parseInt(value);
+    }
+    // apply new value to element
+    $(el).val(newValue);
+}
+
+function fixPrice(el) {
+    // this is element's value selector, you should use your own
+    value = $(el).val();
+    if (value == '') {
+        value = 0;
+    }
+    newValue = parseFloat(value.replace(',', '.')).toFixed(2);
+    // if new value is Nan (when input is a string with no integers in it)
+    if (isNaN(newValue)) {
+        value = 0;
+        newValue = parseFloat(value).toFixed(2);
+    }
+    // apply new value to element
+    $(el).val(newValue);
+}
