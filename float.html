@@ -17,21 +17,25 @@
  
 <script>
   function Submit(){ 
-    var n1=document.getElementById("digit").value
+    var n2=document.getElementById("2digit").value
     let pv=1
-    let value=0
-    for(let i = n1.length-1; i >=0; i--){
-      value = value + (parseInt(n1[i]) * pv)
+    let exponent=0
+    for(let i = n2.length-1; i >=0; i--){
+      exponent = exponent + (parseInt(n2[i]) * pv)
       pv = pv *2
     }
-    window.alert(value)
+    window.alert(exponent)
     
-    let two=num.toString(2)
-    var n2=document.getElementById("2digit").value
-    shifts=parseInt(n2, 2)
-    var num2=parseInt(n2)
-    let twoo=num.toString(2)
-    window.alert()
+    var n1=document.getElementById("digit").value
+    shifts=exponent
+    shifted = ""
+    for (let i = 0; i< n1.length; i++){
+      if (i == shifts+1){
+        shifted = shifted + "."
+      }
+      shifted = shifted + n1[i]
+    }
+    window.alert(shifted)
   }
 
 </script>
