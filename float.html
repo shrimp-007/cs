@@ -20,18 +20,9 @@
     var n1=document.getElementById("digit").value
     var num=parseInt(n1)
     let two=num.toString(2)
-    var n2=document.getElementById("2digit").value
+    var n2=document.getElementById("2digit").value(+exponentialnumber).toFixed(8)
     var num2=parseInt(n2)
     let twoo=num.toString(2)
-    if (decimal.toLowerCase().includes('e-')) {
-    const exponentialSplitted = decimal.split('e-');
-    let prefix = '0.';
-    for (let i = 0; i < +exponentialSplitted[1] - 1; i++) {
-      prefix += '0';
-    }
-    decimal = prefix + exponentialSplitted[0].replace('.', '');
-  }
-    window.alert(decimal)
     var n3=num + num2
     window.alert(parseInt(n3, 2))
    
